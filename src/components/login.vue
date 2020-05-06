@@ -1,5 +1,6 @@
 <template>
   <div class="login-wrap">
+    <h1 style="margin-left:670px;margin-bottom:50px;">AI OCR Platform バックグラウンド管理</h1>
     <el-form label-position="left" :model="ruleForm" :rules="rules" ref="ruleForm" label-width="0px" class="demo-ruleForm login-container">
       <h3 class="title">ユーザーログイン</h3>
       <el-form-item prop="username">
