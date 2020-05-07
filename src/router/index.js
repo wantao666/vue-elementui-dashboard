@@ -2,13 +2,15 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 // 首页
-import Index from '@/views/index';
+import Index from '@/views/Index';
+import Index1 from '@/views/index1'
 //用户管理
 import User from '@/components/user/user'
 //课金管理
 import Point from '@/components/point/point'
 import login from '@/components/login'
 import DataTable from '@/components/data/dataTable'
+import Profile from '@/components/profile/profile'
 
 
 
@@ -42,6 +44,16 @@ export default new Router({
         path: '/login',
         name: 'login',
         component: login,
+    }, {
+        path: '/index1',
+        name: '前台首页',
+        component: Index1,
+        children: [{
+            path: '/profile',
+            name: 'profile',
+            component: Profile
+        },
+        ]
     }
-]
+    ]
 })
