@@ -55,6 +55,19 @@ export default {
               url: "/point"
             }
           ]
+        },
+        {
+          id: 2,
+          name: "データ統計",
+          icon: "el-icon-star-off",
+          submenus: [
+            {
+              id: 1,
+              name: "データレポート",
+              icon:"el-icon-s-data",
+              url:'/data'
+            }
+          ]
         }
       ]
     };

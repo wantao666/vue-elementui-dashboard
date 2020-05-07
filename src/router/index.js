@@ -8,6 +8,7 @@ import User from '@/components/user/user'
 //课金管理
 import Point from '@/components/point/point'
 import login from '@/components/login'
+import DataTable from '@/components/data/dataTable'
 
 
 
@@ -17,24 +18,30 @@ Vue.use(Router);
 
 // 导出路由 
 export default new Router({
-  routes: [{
-    path: '/index',
-    name: '首页',
-    component: Index,
-    children: [{
-        path: '/user',
-        name: 'user',
-        component: User
-      },
-      {
-        path: '/point',
-        name: 'point',
-        component: Point
-      }
-    ]
-  }, {
-    path: '/login',
-    name: 'login',
-    component: login,
-  }]
+    routes: [{
+        path: '/index',
+        name: '首页',
+        component: Index,
+        children: [{
+            path: '/user',
+            name: 'user',
+            component: User
+        },
+        {
+            path: '/point',
+            name: 'point',
+            component: Point
+        }, {
+            path: '/data',
+            name: 'dataTable',
+            component: DataTable
+        }
+
+        ]
+    }, {
+        path: '/login',
+        name: 'login',
+        component: login,
+    }
+]
 })

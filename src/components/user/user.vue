@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style=" overflow-x:hidden">
     <el-row style="margin-bottom:20px;">
       <el-breadcrumb separator-class="el-icon-arrow-right">
         <el-breadcrumb-item :to="{ path: '/' }">システム管理</el-breadcrumb-item>
@@ -245,7 +245,11 @@ export default {
       },
       rules: {
         password: [
-          { required: true, message: "パスワードを入力してください", trigger: ["blur", "change"] }
+          {
+            required: true,
+            message: "パスワードを入力してください",
+            trigger: ["blur", "change"]
+          }
         ],
         password1: [
           {

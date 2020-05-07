@@ -33,7 +33,7 @@
           <template slot-scope="scope">
             <el-form>
               <el-table :data="scope.row.rules" border style="width: 30%;margin-left:400px;">
-                <el-table-column label="1か月あたりの通話数（n）" align="center">
+                <el-table-column label="1か月あたりのリクエスト(n)" align="center">
                   <template slot-scope="scope">
                     <span>
                       {{scope.row.min}}
@@ -86,7 +86,7 @@
             <el-input size="medium" placeholder="ルール名を入力してください"></el-input>
           </el-col>
         </el-form-item>
-        <el-form-item label="毎月の通話:">
+        <el-form-item label="1か月あたりのリクエスト:">
           <el-col :span="18">
             <el-col :span="4">
               <el-input size="medium" placeholder="min1"></el-input>
@@ -108,7 +108,7 @@
             </el-col>
           </el-col>
         </el-form-item>
-        <el-form-item label="毎月の通話:">
+        <el-form-item label="1か月あたりのリクエスト:">
           <el-col :span="18">
             <el-col :span="4">
               <el-input size="medium" placeholder="max1"></el-input>
@@ -130,7 +130,7 @@
             </el-col>
           </el-col>
         </el-form-item>
-        <el-form-item label="毎月の通話:">
+        <el-form-item label="1か月あたりのリクエスト:">
           <el-col :span="18">
             <el-col :span="4">
               <el-input size="medium" placeholder="max2"></el-input>
@@ -167,7 +167,7 @@
             <el-input size="medium" placeholder="ルール名を入力してください" v-model="pointRuleForm.name"></el-input>
           </el-col>
         </el-form-item>
-        <el-form-item label="毎月の通話:">
+        <el-form-item label="1か月あたりのリクエスト:">
           <el-col :span="18">
             <el-col :span="4">
               <el-input size="medium" placeholder="min1" v-model="pointRuleForm.rules[0].min"></el-input>
@@ -189,7 +189,7 @@
             </el-col>
           </el-col>
         </el-form-item>
-        <el-form-item label="毎月の通話:">
+        <el-form-item label="1か月あたりのリクエスト:">
           <el-col :span="18">
             <el-col :span="4">
               <el-input size="medium" placeholder="max1" v-model="pointRuleForm.rules[1].min"></el-input>
@@ -211,7 +211,7 @@
             </el-col>
           </el-col>
         </el-form-item>
-        <el-form-item label="毎月の通話:">
+        <el-form-item label="1か月あたりのリクエスト:">
           <el-col :span="18">
             <el-col :span="4">
               <el-input size="medium" placeholder="max2" v-model="pointRuleForm.rules[2].min"></el-input>
